@@ -1,0 +1,1 @@
+*/5 * * * * ping -c1 -q 1.1.1.1 >/dev/null 2>&1 || sh /root/check_net.sh
