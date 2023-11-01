@@ -14,5 +14,5 @@ curr_time=$( date +%s )
 if [ $(( (curr_time-last_time)/60 )) -gt "7" ]; then
         printf "%d" "$curr_time" >/tmp/netcheck
 else
-        echo /etc/init.d/network restart
+        /etc/init.d/network restart
 fi
